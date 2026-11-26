@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths | Operator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./JS/addition.js" defer></script>
+    <script src="./JS/subtraction.js" defer></script>
+    <script src="./JS/multiplication.js" defer></script>
+    <script src="./JS/division.js" defer></script>
+    <script src="./JS/multiple.js" defer></script>
+    <script src="./JS/modulus.js" defer></script>
+    <script src="./JS/negation.js" defer>   </script>
+    <script src="./JS/random.js" defer></script>
+   <style>
+    p, h3 {
+        text-align: center;
+    }
+
+    button {
+        display:block;
+        margin: 0 auto;
+    }
+   </style>
+
+</head>
+<body>
+    <br>
+
+<h3>Addition</h3>
+<p id="addition"></p>
+<button onclick="showAddition()">Show Addittion</button>
+
+
+<h3>Subtraction</h3>
+<p id="subtraction"></p>
+<button onclick="showSubtraction()">Show Subtraction</button>
+
+<h3>Multiplication</h3>
+<p id="multiplication"></p>
+<button onclick="showMultiplication()">Show Mutiplication</button>
+
+
+<h3>Division</h3>
+<p id="division"></p>
+<button onclick="showDivision()">Show Division</button>
+
+
+
+<h3>Multiple Operations</h3>
+<p id="multiple"></p>
+<button onclick="showMultiple()">Show Multiple</button>
+
+
+<h3>Modulus</h3>
+<p id="modulus_"></p>
+<button onclick="showModulus()">Show Modulus</button>
+
+
+<h3>Unary operator</h3>
+<P>Negation Operand</P>
+<p id="negation"></p>
+<button onclick="showNegation_operand()">Show Negation Operand</button>
+
+
+<h3>Increment Operator</h3>
+<p>Increase the number 13 to the next count</p>
+<p id="increment"></p>
+
+<button onclick="showIncrement()">Show Increment</button>
+ 
+
+<script>
+    function showIncrement() {
+    let increment = 13;
+    increment++;
+    document.getElementById("increment").innerHTML= increment++;
+
+    }
+
+    Increment();
+</script>
+
+<h3>Decrement</h3>
+<p>Decrease the number 13 to the next count</p>
+
+<p id="decrement"></p>
+<button onclick="showDecrement()">Show Decrement</button>
+
+
+<script>
+    function showDecrement() {
+    let decrement = 13;
+    decrement --;
+    document.getElementById("decrement").innerHTML= decrement--;
+    }
+
+    Decrement();
+</script>
+
+
+<h3>Random Number</h3>
+<p id="random"></p>
+<button onclick="showRandom()">Show Random</button>
+
+
+<h3>Ceiling</h3>
+ <p id="cell"></p>
+
+ <button onclick="showCeil()">Show Ceil</button>
+
+<script>
+   function showCeil(){
+    let x = Math.ceil(8.2);
+    
+    document.getElementById("cell").innerHTML= "This number is rounded to the ceiling " + x ;
+   }
+   Ceil();
+</script>
+
+<h3>Power</h3>
+<p id="power"></p>
+<button onclick="showPower()">Show Power</button>
+
+<script>
+    function showPower() {
+let g =Math.pow(9,3);
+
+document.getElementById("power").innerHTML= "9 raised to power 3 is: " + g;
+    }
+    Power();
+</script>
+    <br>
+    <br>
+    <br>
+</body>
+</html>
