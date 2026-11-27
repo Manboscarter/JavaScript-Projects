@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="./JS/main.js" defer></script>
+        <script src="./JS/example.js" defer></script>
+        <style>
+            h3,p, body {
+                text-align: center;
+            }
+
+            button{
+                display:block;
+                margin:0 auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h3>Number</h3>
+        <p>3 is a what type of variable in Javascript.</p>
+     <script>
+        document.write(typeof 3);
+        
+     </script>
+     <br>
+     <h3>String</h3>
+     <p>"word" is a type of what variable in Javascript.</p>
+
+<script>
+     document.write(typeof"word");
+</script>
+
+<h3>Type Coercion</h3>
+
+<p>("10" + 5)</p>
+<script>
+    document.write("10" + 5)
+</script>
+<p>This above is incorrect and coercion will be applied.</p>
+
+<scrip>
+    document.write(Number("10")+5)
+</script>
+
+<h3>Examples of Not a Number and Number</h3>
+<p>Not A Number</p>
+<p>('This is a string)</p>
+<p id="notAnumber"></p>
+<button onclick="showNotaNumber()">Click !</button>
+<p>A number</p>
+<p>007</p>
+<p id="Anumber"></p>
+<button onclick="showAnumber()">Click !!</button>
+
+<p>0/0=?</p>
+<p> The Above is Not A Number</p>
+<p id="division"></p>
+<button onclick="myDivision()">Click !!!</button>
+
+<h3>Infinity Number</h3>
+<p>Example</p>
+<p>2E310</p>
+<p id="iNFI"></p>
+<button onclick="myInfinity()">Click Me</button>
+
+<h3>Negative Infinity</h3>
+<p>Display (-3E310)</p>
+<p id="mNi"></p>
+<button onclick="myNegativeinfinity()">Click Me !</button>
+
+<h3>Boolean logic</h3>
+<p>Example with AND</p>
+<p>is this true or false (30 >5).</p>
+<p id="AnD"></p>
+<button onclick="myLogic()">Click Me !!</button>
+
+<h3>Console Log Assignment</h3>
+<p>Console.log (6+3) </p>
+
+<p id="ConsoleR"></p>
+<button onclick="cONSOLE()">Click </button>
+
+<script>
+    function cONSOLE(){
+     console.log(6 + 3);
+           document.getElementById("ConsoleR").innerHTML= 6 + 3; 
+    }
+    
+
+</script>
+
+<h3>Boolean Challenge In Console</h3>
+<p>is (7 > 19)</p>
+<p id="BcIc"></p>
+<button onclick="myBooleanC()">Click Me</button>
+
+<script> 
+    function myBooleanC(){
+        console.log(7>19);
+
+        document.getElementById("BcIc").innerHTML=7>19;
+
+    }
+</script>
+<h3>Double Equal sign</h3>
+<p>Is(34==49). True or False</p>
+<p id="DeS"></p>
+<button onclick="myDoubleS()">Click !</button>
+
+<h3>Triple Equal sign</h3>
+<P>eXAMPLE 1</P>
+<p>is (23 ==="23")</p>
+<p>Same value but not Same data type.</p>
+<p>True or False</p>
+<p>Return false by writing a different data type but the same value for both.</p>
+<p id="TeS"></p>
+<button onclick="myTripleEs()">Click Me !</button>
+
+
+
+
+
+<P>eXAMPLE 2</P>
+<p>Is (23===23)</p>
+<p>Same value and Same data type.</p>
+<p id="SvSd"></p>
+<p>Return true by ensuring to match the data type and value.</p>
+<button onclick="MyTripleS()">Click !!</button>
+
+
+
+
+<p>eXample 3
+</p>
+<p>Same data type but different values</p>
+<p>is (23===24)</p>
+<p>True or false</p>
+<p>Return false by writing the same data type but a different value for both.</p>
+<p id="SdTbDv"></p>
+<button onclick="myTeSign()">Click !!!</button>
+
+
+<p>ExAmPlE 4</p>
+
+<p>Different data type and different values</p>
+<p>is ("thirty"===29)</p>
+<p>True or false</p>
+<p>Return false by writing a different data type and different value.</p>
+<p id="DdTdV"></p>
+
+    <button onclick="mYtRIPLES()">Click Me !</button>
+
+
+<h3>And/OR Opearator</h3>
+<p>ExAMPle 1</p>
+<p>And operator</p>
+<p>is (30 > 4 && 21 > 2) </p>
+<p>True or false</p>
+<p id="ANdaa"></p>
+<button onclick="myANda()">Click !</button>
+
+<p>ExAmPle 2</p>
+<p>And operator</p>
+<p>is (30 > 4 && 2 > 21) </p>
+<p>True or false</p>
+<p id="aNdd"></p>
+<button onclick="myANdd()">Click !!</button>
+
+<p>eXAMPle 3</p>
+<p>is (30 > 4 || 2 >21)</p>
+<p>True or false</p>
+<p id="oR"></p>
+<button onclick="myOR()">Click Me !!</button>
+
+<p>eXamPLE 4</p>
+<p>is (4 > 30 || 2 > 21)</p>
+<p>True or false</p>
+<p id="oRR"></p>
+<button onclick="myORR()">Click Me !</button>
+
+<h3>Not Operator</h3>
+<p>is this Not</p>
+<p>!(44 > 2)</p>
+<p>True or false</p>
+<p id="NotT">
+    <button onclick="myNotT()">Click</button>
+</p>
+
+
+
+
+
+
+<br>
+<br>
+
+
+
+    </body>
+</html>
